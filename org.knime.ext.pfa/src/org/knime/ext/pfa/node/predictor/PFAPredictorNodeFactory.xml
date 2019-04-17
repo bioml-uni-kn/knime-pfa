@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./pfa_predictor_tra.png" type="Predictor"
+    xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>PFA Predictor</name>
+
+    <shortDescription>
+        Applies a PFA scoring engine to a KNIME table.
+    </shortDescription>
+
+    <fullDescription>
+        <intro>
+            
+            For more information please visit <a href="http://dmg.org/pfa/index.html">the DMG PFA website</a>.
+            Supported primitive types are: boolean, int, long, float, double, string.
+            Supported complex types are: Records, Maps, Union (Union types are used for nullable types in PFA. Other use cases
+            are currently not supported).
+        </intro>
+        <option name="Output Column Name">
+            If the output is a record or a map, then there is no need to set the column name, since it will be automatically set according to the column names from the PFA document.
+            If the output is a primitive type (e.g. boolean, int), then this value will be used as column name.
+        </option>
+    </fullDescription>
+    <ports>
+        <inPort index="0" name="PFA Model">The PFA Model to use for making
+            predictions. Type of the port is PFAPortObject.
+        </inPort>
+        <inPort index="1" name="Data">The data table to make predictions for. Type of the port is BufferedDataTable.
+        </inPort>
+        <outPort index="0" name="Prediction">The output of the PFA scoring engine as a data table. Type of the port is BufferedDataTable. 
+        </outPort>
+    </ports>
+</knimeNode>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knimeNode icon="./pfa_reader_tra.png" type="Source"
+    xmlns="http://knime.org/node/v2.8" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://knime.org/node/v2.10 http://knime.org/node/v2.10.xsd">
+    <name>PFA Reader</name>
+
+    <shortDescription>
+        Reads a PFA document from a JSON or YAML formatted file.
+    </shortDescription>
+
+    <fullDescription>
+        <intro>
+            PFA scoring engines are formatted as either JSON or YAML. This node reads such files and outputs the PFA as a KNIME port,
+            allowing it to be used in conjunction with a PFA Predictor node.
+            PFA is expressed as a JSON or YAML document. It has control structures, e.g. conditionals, loops and user-defined functions.
+            For more information please visit <a href="http://dmg.org/pfa/index.html">the DMG PFA website</a>.
+            Supported primitive types are: boolean, int, long, float, double, string.
+            Supported complex types are: Records, Maps, Union (Union types are used for nullable types in PFA. Other use cases
+            are currently not supported).</intro>
+
+        <option name="File path">The file to read the PFA document from</option>
+
+    </fullDescription>
+
+    <ports>
+        <outPort index="0" name="PFA document">The PFA document from the loaded file</outPort>
+    </ports>
+</knimeNode>
