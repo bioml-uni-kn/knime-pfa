@@ -10,15 +10,32 @@
 
     <fullDescription>
         <intro>
-            
-            For more information please visit <a href="http://dmg.org/pfa/index.html">the DMG PFA website</a>.
-            Supported primitive types are: boolean, int, long, float, double, string.
-            Supported complex types are: Records, Maps, Union (Union types are used for nullable types in PFA. Other use cases
-            are currently not supported).
+            <p>
+                This node applies a scoring engine expressed in PFA format to a KNIME data table.
+            </p>
+            <p>
+                For more information please visit <a href="http://dmg.org/pfa/index.html">the DMG PFA website</a>.
+                Supported primitive types are: boolean, int, long, float, double, string.
+                Supported complex types are: Records, Maps, Union (Union types are used for nullable types in PFA. Other use cases
+                are currently not supported).
+            </p>
+            <p>
+                Maps and records are mapped to table rows, so that the column name is the key and the cell in each row corresponds to a value.
+                Arrays are mapped to collection cells.
+            </p>
+            <p>
+                If the scoring engine outputs scalar values,
+                the output is a table with a single column with the name set in the "Output Column Name" option.
+                If the output is a record or a map, then there is no need to set the column name,
+                since it will be automatically set according to the column names from the PFA document.
+            </p>
+            <p>
+                Please note that this node does not output the original table
+                with the PFA scoring engine's output appended, but just the PFA output.
+            </p>
         </intro>
         <option name="Output Column Name">
-            If the output is a record or a map, then there is no need to set the column name, since it will be automatically set according to the column names from the PFA document.
-            If the output is a primitive type (e.g. boolean, int), then this value will be used as column name.
+            If the output is a scalar type (e.g. boolean, int), then this value will be used as column name.
         </option>
     </fullDescription>
     <ports>
