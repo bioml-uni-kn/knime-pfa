@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Portable Format for Analytics (PFA) Nodes
+Bundle-SymbolicName: de.unikn.knime.pfa.plugin;singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-Vendor: University of Konstanz, Germany
+Require-Bundle: org.knime.base
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ lib/hadrian-mr-0.8.1-jar-with-dependencies.jar
+

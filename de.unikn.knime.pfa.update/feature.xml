@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="de.unikn.knime.pfa.update"
+      label="Uni Konstanz PFA Update Site"
+      version="0.0.1.qualifier"
+      provider-name="University of Konstanz, Germany">
+
+   <includes
+         id="de.unikn.knime.pfa.feature"
+         version="0.0.0"/>
+
+</feature>
