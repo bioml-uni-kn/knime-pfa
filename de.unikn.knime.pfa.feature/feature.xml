@@ -2,7 +2,7 @@
 <feature
       id="de.unikn.knime.pfa.feature"
       label="KNIME Portable Format for Analytics (PFA) Support"
-      version="0.0.1.qualifier"
+      version="0.0.2.qualifier"
       provider-name="University of Konstanz, Germany">
 
    <description url="http://www.knime.org/">
