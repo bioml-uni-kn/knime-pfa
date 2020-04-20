@@ -13,4 +13,4 @@ The PFA Predictor takes such an imported PFA file and a KNIME data table and exe
 
 ![PFA Example](https://raw.githubusercontent.com/bioml-uni-kn/knime-pfa/master/pfa.png)
 
-Mete Can Akar ([Metete](https://github.com/Metete)) contributed code to this project.
+Mete Can Akar ([metecanakar](https://github.com/metecanakar)) contributed code to this project.
